@@ -74,7 +74,7 @@ module Zencoder
           http.use_ssl = true
 
           if !skip_ssl_verify && root_cert_path = locate_root_cert_path
-            http.ca_path = root_cert_path
+            #http.ca_path = root_cert_path
             http.verify_mode = OpenSSL::SSL::VERIFY_PEER
             http.verify_depth = 5
           else
